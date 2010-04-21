@@ -26,15 +26,19 @@ Astronomy Nexus site maintainer. He's pretty casual about usage, though.
 
 With Perl installed, you can `prove` the examples work yourself:
 
-    $ prove
+    $ prove -Ilib
+
+or
+
+    $ make test
 
 [Modern::Perl]: http://search.cpan.org/~chromatic/Modern-Perl-1.03/
-[IO::Pty::Easy]: http://search.cpan.org/~doy/IO-Pty-Easy-0.08/
+[IPC::Run]: http://search.cpan.org/~toddr/IPC-Run-0.89/
 
-Note that I use [Modern::Perl] and [IO::Pty::Easy][] in my code, so that's a dependency for the tests.
+Note that I use [Modern::Perl] and [IPC::Run][] in my code, so that's a dependency for the tests.
 
     $ sudo cpan Modern::Perl
-    $ sudo cpan IO::Pty::Easy
+    $ sudo cpan IPC::Run
 
 ## I have questions!
 

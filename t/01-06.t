@@ -1,15 +1,19 @@
 use Modern::Perl;
-use IO::Pty::Easy;
-use Test::More tests => 3;
+use Test::CLI qw(run_output_is);
+use Test::More tests => 1;
 
-my $pty = IO::Pty::Easy->new;
-ok $pty->spawn("parrot", "code/example-01-06.pir");
+my @command = qw(parrot code/example-01-06.pir);
 
-my $output = $pty->read();
-is $output, "Please enter your name: ";
+my $in =<<INPUT
+Brian
+INPUT
+;
 
-$pty->write("Brian\n");
-$output = $pty->read();
-is $output, "Hello, Brian!\n";
+my $expected =<<EXPECTED
+Please enter your name: Brian
+Hello, Brian!
+EXPECTED
+;
 
-$pty->close;
+run_output_is $expected, \@command, $in;
+
