@@ -28,9 +28,13 @@ With Perl installed, you can `prove` the examples work yourself:
 
     $ prove
 
-Note that I use Modern::Perl in my code, so that's a dependency for the tests.
+[Modern::Perl]: http://search.cpan.org/~chromatic/Modern-Perl-1.03/
+[IO::Pty::Easy]: http://search.cpan.org/~doy/IO-Pty-Easy-0.08/
+
+Note that I use [Modern::Perl] and [IO::Pty::Easy][] in my code, so that's a dependency for the tests.
 
     $ sudo cpan Modern::Perl
+    $ sudo cpan IO::Pty::Easy
 
 ## I have questions!
 
