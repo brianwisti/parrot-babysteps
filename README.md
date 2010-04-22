@@ -42,7 +42,7 @@ Note that I use [Modern::Perl] and [IPC::Run][] in my code, so that's a dependen
 
 ## I have questions!
 
-Don't we all? You can find details about contacting my at [my page][].
+Don't we all? You can find details about contacting me at [my page][].
 
 Brian Wisti
 
