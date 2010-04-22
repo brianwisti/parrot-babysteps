@@ -16,7 +16,7 @@ sub run_output_is {
     my ($expected, $command, $input, $diagnostic) = @_;
     my ($out, $err);
     run $command, \$input, \$out, \$err, timeout($TIMEOUT);
-    is $expected, $out, $diagnostic;
+    is $out, $expected, $diagnostic;
 }
 
 1;
