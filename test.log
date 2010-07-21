@@ -1,0 +1,126 @@
+prove -Ilib
+t/01-01.t .. ok
+t/01-02.t .. ok
+t/01-03.t .. ok
+t/01-04.t .. ok
+t/01-05.t .. ok
+t/01-06.t .. ok
+t/02-01.t .. ok
+t/02-02.t .. ok
+t/02-03.t .. ok
+t/02-04.t .. ok
+t/02-05.t .. ok
+t/02-06.t .. ok
+t/02-07.t .. ok
+t/02-08.t .. ok
+t/02-09.t .. ok
+t/02-10.t .. ok
+t/02-11.t .. ok
+t/02-12.t .. ok
+t/03-01.t .. ok
+t/03-02.t .. ok
+t/03-03.t .. ok
+t/03-04.t .. ok
+t/03-05.t .. ok
+t/03-06.t .. ok
+t/03-07.t .. ok
+t/03-08.t .. ok
+t/03-09.t .. ok
+t/03-10.t .. ok
+t/04-01.t .. ok
+t/04-02.t .. ok
+t/04-03.t .. ok
+t/04-04.t .. ok
+t/05-01.t .. ok
+t/05-02.t .. ok
+t/05-03.t .. ok
+t/05-04.t .. ok
+t/05-05.t .. ok
+t/05-06.t .. ok
+t/05-07.t .. ok
+t/06-01.t .. ok
+t/06-02.t .. ok
+t/06-03.t .. ok
+t/06-04.t .. ok
+t/06-05.t .. ok
+t/06-06.t .. ok
+t/06-07.t .. ok
+t/07-01.t .. ok
+t/07-02.t .. ok
+t/07-03.t .. ok
+t/08-01.t .. ok
+t/08-02.t .. ok
+t/08-03.t .. ok
+t/08-04.t .. ok
+t/08-05.t .. ok
+t/08-06.t .. ok
+t/08-07.t .. ok
+t/08-08.t .. ok
+t/08-09.t .. ok
+t/08-10.t .. ok
+t/08-11.t .. ok
+t/08-12.t .. ok
+
+#   Failed test at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 20.
+#          got: 'usage: parrot setup.pir [target|--key value]*
+# 
+#     Default targets are :
+# 
+#         build:          Build the library.
+# 
+#         test:           Run the test suite.
+# 
+#         install:        Install the library.
+# 
+#         uninstall:      Uninstall the library.
+# 
+#         clean:          Basic cleaning up.
+# 
+#         update:         Update from the repository.
+# 
+#         plumage:        Output a skeleton for Plumage
+# 
+#         sdist:          Create a source distribution
+# 
+#         bdist:          Create a binary distribution
+# 
+#         help:           Print this help message.
+# 
+# '
+#     expected: 'usage: parrot setup.pir [target|--key value]*
+# 
+#     Default targets are :
+# 
+#         build:          Build the library.
+# 
+#         test:           Run the test suite.
+# 
+#         install:        Install the library.
+# 
+#         uninstall:      Uninstall the library.
+# 
+#         clean:          Basic cleaning up.
+# 
+#         update:         Update from the repository.
+# 
+#         plumage:        Output a skeleton for Plumage
+# 
+#         sdist:          Create a source distribution
+# 
+#         bdist:          Create a binary distribution
+# 
+#         help:           Print this help message.
+# '
+# Looks like you failed 1 test of 1.
+t/09-01.t .. 
+Dubious, test returned 1 (wstat 256, 0x100)
+Failed 1/1 subtests 
+
+Test Summary Report
+-------------------
+t/09-01.t (Wstat: 256 Tests: 1 Failed: 1)
+  Failed test:  1
+  Non-zero exit status: 1
+Files=62, Tests=70, 30 wallclock secs ( 0.16 usr  0.15 sys + 27.61 cusr  1.94 csys = 29.86 CPU)
+Result: FAIL
+make: *** [test] Error 1
