@@ -18,8 +18,8 @@
     if argument_count != 2 goto BAD_ARG_COUNT
     a = shift argv
     b = shift argv
-    a_squared = a ** 2
-    b_squared = b ** 2
+    a_squared = a * a
+    b_squared = b * b
     say a_squared
     say b_squared
     c_squared = a_squared + b_squared

@@ -13,8 +13,8 @@
     stdin = getstdin
     a = stdin.'readline_interactive'('A: ')
     b = stdin.'readline_interactive'('B: ')
-    a_squared = a ** 2
-    b_squared = b ** 2
+    a_squared = a * a
+    b_squared = b * b
     c_squared = a_squared + b_squared
     c = sqrt c_squared
     print "Hypotenuse: "
