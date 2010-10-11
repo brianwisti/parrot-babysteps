@@ -2,8 +2,8 @@ package Test::CLI;
 use strict;
 use warnings;
 use IPC::Run qw(run timeout);
-use Test::More;
 
+use Test::More;
 use base qw(Exporter);
 
 our @EXPORT_OK = qw(

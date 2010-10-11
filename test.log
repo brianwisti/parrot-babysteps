@@ -1,607 +1,852 @@
-prove -Ilib
-t/01-01.t .. ok
-t/01-02.t .. ok
-t/01-03.t .. ok
-t/01-04.t .. ok
-t/01-05.t .. ok
-t/01-06.t .. ok
-t/02-01.t .. ok
-t/02-02.t .. ok
-t/02-03.t .. ok
-
-#   Failed test at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 20.
-#          got: 'error:imcc:syntax error, unexpected INTC, expecting '(' ('1')
-# 	in file 'code/example-02-04.pir' line 5
-# error:imcc:syntax error ... somewhere
-# 	in file 'code/example-02-04.pir' line 7
-# '
-#     expected: '4 bytes in an integer on this machine
-# '
-# Looks like you failed 1 test of 1.
-t/02-04.t .. 
-Dubious, test returned 1 (wstat 256, 0x100)
-Failed 1/1 subtests 
-t/02-05.t .. ok
-
-#   Failed test at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 20.
-#          got: 'error:imcc:syntax error, unexpected INTC, expecting '(' ('2')
-# 	in file 'code/example-02-06.pir' line 5
-# error:imcc:syntax error ... somewhere
-# 	in file 'code/example-02-06.pir' line 7
-# '
-#     expected: '8 bytes in a number on this machine
-# '
-# Looks like you failed 1 test of 1.
-t/02-06.t .. 
-Dubious, test returned 1 (wstat 256, 0x100)
-Failed 1/1 subtests 
-t/02-07.t .. ok
-t/02-08.t .. ok
-
-#   Failed test at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 20.
-#          got: 'error:imcc:The opcode 'pow_n_n_ic' (pow<3>) was not found. Check the type and number of the arguments
-# 	in file 'code/example-02-09.pir' line 16
-# '
-#     expected: 'A: 1
-# B: 1
-# Hypotenuse: 1.4142135623731
-# '
-# Looks like you failed 1 test of 1.
-t/02-09.t .. 
-Dubious, test returned 1 (wstat 256, 0x100)
-Failed 1/1 subtests 
-t/02-10.t .. ok
-t/02-11.t .. ok
-t/02-12.t .. ok
-t/03-01.t .. ok
-t/03-02.t .. ok
-t/03-03.t .. ok
-t/03-04.t .. ok
-t/03-05.t .. ok
-t/03-06.t .. ok
-t/03-07.t .. ok
-t/03-08.t .. ok
-t/03-09.t .. ok
-t/03-10.t .. ok
-t/04-01.t .. ok
-t/04-02.t .. ok
-t/04-03.t .. ok
-
-#   Failed test at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 20.
-#          got: 'error:imcc:The opcode 'pow_n_n_ic' (pow<3>) was not found. Check the type and number of the arguments
-# 	in file 'code/example-04-04.pir' line 21
-# '
-#     expected: '144
-# 529
-# 25.9422435421457
-# '
-# Looks like you failed 1 test of 1.
-t/04-04.t .. 
-Dubious, test returned 1 (wstat 256, 0x100)
-Failed 1/1 subtests 
-t/05-01.t .. ok
-t/05-02.t .. ok
-t/05-03.t .. ok
-t/05-04.t .. ok
-t/05-05.t .. ok
-t/05-06.t .. ok
-t/05-07.t .. ok
-
-#   Failed test at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 20.
-#          got: 'error:imcc:syntax error, unexpected VAR, expecting '(' ('filename')
-# 	in file 'example-06-01.pir' line 12
-# error:imcc:syntax error, unexpected VAR, expecting '(' ('data_file')
-# 	in file 'example-06-01.pir' line 15
-# error:imcc:syntax error, unexpected VAR, expecting '(' ('data_file')
-# 	in file 'example-06-01.pir' line 19
-# error:imcc:syntax error, unexpected VAR, expecting '(' ('data_file')
-# 	in file 'example-06-01.pir' line 24
-# error:imcc:syntax error ... somewhere
-# 	in file 'example-06-01.pir' line 27
-# '
-#     expected: 'There are 119618 stars in the HYG catalog.
-# '
-# Looks like you failed 1 test of 1.
-t/06-01.t .. 
-Dubious, test returned 1 (wstat 256, 0x100)
-Failed 1/1 subtests 
-
-#   Failed test at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 20.
-#          got: 'error:imcc:syntax error, unexpected VAR, expecting '(' ('filename')
-# 	in file 'example-06-02.pir' line 18
-# error:imcc:syntax error, unexpected VAR, expecting '(' ('data_file')
-# 	in file 'example-06-02.pir' line 21
-# error:imcc:syntax error, unexpected VAR, expecting '(' ('data_file')
-# 	in file 'example-06-02.pir' line 25
-# error:imcc:syntax error, unexpected VAR, expecting '(' ('data_file')
-# 	in file 'example-06-02.pir' line 38
-# error:imcc:syntax error ... somewhere
-# 	in file 'example-06-02.pir' line 45
-# '
-#     expected: 'There are 119618 stars in the HYG catalog.
-# 87 of them have proper names.
-# 119531 of them do not have proper names.
-# '
-# Looks like you failed 1 test of 1.
-t/06-02.t .. 
-Dubious, test returned 1 (wstat 256, 0x100)
-Failed 1/1 subtests 
-
-#   Failed test at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 20.
-#          got: 'error:imcc:syntax error, unexpected VAR, expecting '(' ('filename')
-# 	in file 'example-06-03.pir' line 25
-# error:imcc:syntax error, unexpected VAR, expecting '(' ('data_file')
-# 	in file 'example-06-03.pir' line 26
-# error:imcc:syntax error, unexpected VAR, expecting '(' ('data_file')
-# 	in file 'example-06-03.pir' line 43
-# error:imcc:syntax error, unexpected VAR, expecting '(' ('data_file')
-# 	in file 'example-06-03.pir' line 56
-# error:imcc:syntax error ... somewhere
-# 	in file 'example-06-03.pir' line 66
-# '
-#     expected: 'There are 119618 stars in the HYG catalog.
-# 87 of them have proper names.
-# 119531 of them do not have proper names.
-# '
-# Looks like you failed 1 test of 1.
-t/06-03.t .. 
-Dubious, test returned 1 (wstat 256, 0x100)
-Failed 1/1 subtests 
-
-#   Failed test at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 20.
-#          got: 'error:imcc:syntax error, unexpected VAR, expecting '(' ('filename')
-# 	in file 'example-06-04.pir' line 17
-# error:imcc:syntax error, unexpected VAR, expecting '(' ('data_file')
-# 	in file 'example-06-04.pir' line 18
-# error:imcc:syntax error, unexpected VAR, expecting '(' ('data_file')
-# 	in file 'example-06-04.pir' line 22
-# error:imcc:syntax error, unexpected VAR, expecting '(' ('data_file')
-# 	in file 'example-06-04.pir' line 24
-# error:imcc:syntax error ... somewhere
-# 	in file 'example-06-04.pir' line 37
-# '
-#     expected: 'StarID: 0
-# HIP: 
-# HD: 
-# HR: 
-# Gliese: 
-# BayerFlamsteed: 
-# ProperName: Sol
-# RA: 0
-# Dec: 0
-# Distance: 0.000004848
-# PMRA: 0
-# PMDec: 0
-# RV: 0
-# Mag: -26.73
-# AbsMag: 4.85
-# Spectrum: G2V
-# ColorIndex: 0.656
-# X: 0
-# Y: 0
-# Z: 0
-# VX: 0
-# VY: 0
-# VZ
-# : 0
-# 
-# '
-# Looks like you failed 1 test of 1.
-t/06-04.t .. 
-Dubious, test returned 1 (wstat 256, 0x100)
-Failed 1/1 subtests 
-
-#   Failed test at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 20.
-#          got: 'error:imcc:syntax error, unexpected VAR, expecting '(' ('filename')
-# 	in file 'example-06-05.pir' line 22
-# error:imcc:syntax error, unexpected VAR, expecting '(' ('data_file')
-# 	in file 'example-06-05.pir' line 23
-# error:imcc:syntax error, unexpected VAR, expecting '(' ('data_file')
-# 	in file 'example-06-05.pir' line 28
-# error:imcc:syntax error, unexpected VAR, expecting '(' ('data_file')
-# 	in file 'example-06-05.pir' line 31
-# error:imcc:syntax error ... somewhere
-# 	in file 'example-06-05.pir' line 44
-# '
-#     expected: 'StarID: 0
-# HIP: 
-# HD: 
-# HR: 
-# Gliese: 
-# BayerFlamsteed: 
-# ProperName: Sol
-# RA: 0
-# Dec: 0
-# Distance: 0.000004848
-# PMRA: 0
-# PMDec: 0
-# RV: 0
-# Mag: -26.73
-# AbsMag: 4.85
-# Spectrum: G2V
-# ColorIndex: 0.656
-# X: 0
-# Y: 0
-# Z: 0
-# VX: 0
-# VY: 0
-# VZ: 0
-# '
-# Looks like you failed 1 test of 1.
-t/06-05.t .. 
-Dubious, test returned 1 (wstat 256, 0x100)
-Failed 1/1 subtests 
-
-#   Failed test at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 20.
-#          got: 'error:imcc:syntax error, unexpected VAR, expecting '(' ('filename')
-# 	in file 'example-06-06.pir' line 23
-# error:imcc:syntax error, unexpected VAR, expecting '(' ('data_file')
-# 	in file 'example-06-06.pir' line 24
-# error:imcc:syntax error, unexpected VAR, expecting '(' ('data_file')
-# 	in file 'example-06-06.pir' line 29
-# error:imcc:syntax error, unexpected VAR, expecting '(' ('data_file')
-# 	in file 'example-06-06.pir' line 32
-# error:imcc:syntax error ... somewhere
-# 	in file 'example-06-06.pir' line 56
-# '
-#     expected: '<Name: Sol, Spectrum: G2V, Distance: 0.000004848>
-# '
-# Looks like you failed 1 test of 1.
-t/06-06.t .. 
-Dubious, test returned 1 (wstat 256, 0x100)
-Failed 1/1 subtests 
-
-#   Failed test at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 20.
-#          got: 'error:imcc:syntax error, unexpected VAR, expecting '(' ('filename')
-# 	in file 'example-06-07.pir' line 30
-# error:imcc:syntax error, unexpected VAR, expecting '(' ('data_file')
-# 	in file 'example-06-07.pir' line 31
-# error:imcc:syntax error, unexpected VAR, expecting '(' ('data_file')
-# 	in file 'example-06-07.pir' line 36
-# error:imcc:syntax error, unexpected VAR, expecting '(' ('data_file')
-# 	in file 'example-06-07.pir' line 61
-# error:imcc:syntax error, unexpected VAR, expecting '(' ('data_file')
-# 	in file 'example-06-07.pir' line 101
-# error:imcc:syntax error ... somewhere
-# 	in file 'example-06-07.pir' line 106
-# '
-#     expected: '<Name: Sol, Spectrum: G2V, Distance: 0.000004848>
-# <Name: Rigel Kentaurus A, Spectrum: G2V, Distance: 1.34749097181049>
-# 568 stars exactly matched Sol's spectrum G2V
-# 567 have no proper name
-# '
-# Looks like you failed 1 test of 1.
-t/06-07.t .. 
-Dubious, test returned 1 (wstat 256, 0x100)
-Failed 1/1 subtests 
-
-#   Failed test at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 20.
-#          got: 'error:imcc:syntax error, unexpected VAR, expecting '(' ('filename')
-# 	in file 'example-07-01.pir' line 29
-# error:imcc:syntax error, unexpected VAR, expecting '(' ('data_file')
-# 	in file 'example-07-01.pir' line 30
-# error:imcc:syntax error, unexpected VAR, expecting '(' ('data_file')
-# 	in file 'example-07-01.pir' line 35
-# error:imcc:syntax error, unexpected VAR, expecting '(' ('data_file')
-# 	in file 'example-07-01.pir' line 58
-# error:imcc:syntax error, unexpected VAR, expecting '(' ('data_file')
-# 	in file 'example-07-01.pir' line 89
-# error:imcc:syntax error ... somewhere
-# 	in file 'example-07-01.pir' line 115
-# '
-#     expected: '<Name: Sol, Spectrum: G2V, Distance: 0.000004848>
-# <Name: Rigel Kentaurus A, Spectrum: G2V, Distance: 1.34749097181049>
-# 568 stars exactly matched Sol's spectrum G2V
-# 567 have no proper name
-# '
-# Looks like you failed 1 test of 1.
-t/07-01.t .. 
-Dubious, test returned 1 (wstat 256, 0x100)
-Failed 1/1 subtests 
-
-#   Failed test at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 20.
-#          got: 'error:imcc:syntax error, unexpected VAR, expecting '(' ('filename')
-# 	in file 'example-07-02.pir' line 25
-# error:imcc:syntax error, unexpected VAR, expecting '(' ('data_file')
-# 	in file 'example-07-02.pir' line 26
-# error:imcc:syntax error, unexpected VAR, expecting '(' ('data_file')
-# 	in file 'example-07-02.pir' line 30
-# error:imcc:syntax error, unexpected VAR, expecting '(' ('data_file')
-# 	in file 'example-07-02.pir' line 44
-# error:imcc:syntax error, unexpected VAR, expecting '(' ('data_file')
-# 	in file 'example-07-02.pir' line 66
-# error:imcc:syntax error ... somewhere
-# 	in file 'example-07-02.pir' line 119
-# '
-#     expected: '<Name: Sol, Spectrum: G2V, Distance: 0.000004848>
-# <Name: Rigel Kentaurus A, Spectrum: G2V, Distance: 1.34749097181049>
-# 568 stars exactly matched Sol's spectrum G2V
-# 567 have no proper name
-# '
-# Looks like you failed 1 test of 1.
-t/07-02.t .. 
-Dubious, test returned 1 (wstat 256, 0x100)
-Failed 1/1 subtests 
-
-#   Failed test at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 27.
-#                   'error:imcc:syntax error, unexpected VAR, expecting '(' ('filename')
-# 	in file 'example-07-03.pir' line 23
-# error:imcc:syntax error, unexpected VAR, expecting '(' ('data_file')
-# 	in file 'example-07-03.pir' line 24
-# error:imcc:syntax error, unexpected VAR, expecting '(' ('data_file')
-# 	in file 'example-07-03.pir' line 28
-# error:imcc:syntax error, unexpected VAR, expecting '(' ('data_file')
-# 	in file 'example-07-03.pir' line 41
-# error:imcc:syntax error, unexpected VAR, expecting '(' ('data_file')
-# 	in file 'example-07-03.pir' line 57
-# error:imcc:syntax error ... somewhere
-# 	in file 'example-07-03.pir' line 151
-# '
-#     doesn't match '(?m-xis:
-# <Name: HYG 117782, Spectrum: G2V, Distance: 139.275766016713>
-# <Name: HD 224693, Spectrum: G2V, Distance: 94.0733772342427>
-# 568 stars exactly matched Sol's spectrum G2V
-# \z)'
-# Looks like you failed 1 test of 1.
-t/07-03.t .. 
-Dubious, test returned 1 (wstat 256, 0x100)
-Failed 1/1 subtests 
-t/08-01.t .. ok
-t/08-02.t .. ok
-t/08-03.t .. ok
-t/08-04.t .. ok
-t/08-05.t .. ok
-
-#   Failed test at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 20.
-#          got: 'error:imcc:syntax error, unexpected STRINGC, expecting '(' (''subpages.data'')
-# 	in file 'code/example-08-06.pir' line 10
-# error:imcc:syntax error ... somewhere
-# 	in file 'code/example-08-06.pir' line 11
-# '
-#     expected: '1..1
-# ok 1 - Cache files should be cleaned up
-# '
-
-#   Failed test at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 20.
-#          got: 'error:imcc:syntax error, unexpected STRINGC, expecting '(' (''subpages.data'')
-# 	in file 'code/example-08-06.pir' line 10
-# error:imcc:syntax error ... somewhere
-# 	in file 'code/example-08-06.pir' line 11
-# '
-#     expected: '1..1
-# not ok 1 - Cache files should be cleaned up
-# '
-# Looks like you failed 2 tests of 2.
-t/08-06.t .. 
+prove -Ilib 
+t/01-01.t ... ok
+t/01-02.t ... ok
+t/01-03.t ... ok
+t/01-04.t ... ok
+t/01-05.t ... ok
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/01-06.t line 2.
+BEGIN failed--compilation aborted at t/01-06.t line 2.
+t/01-06.t ... 
 Dubious, test returned 2 (wstat 512, 0x200)
-Failed 2/2 subtests 
-t/08-07.t .. ok
-t/08-08.t .. ok
-t/08-09.t .. ok
-t/08-10.t .. ok
-t/08-11.t .. ok
-t/08-12.t .. ok
-t/09-01.t .. ok
-t/09-02.t .. ok
-t/09-03.t .. ok
-t/0a-01.t .. ok
-t/0a-02.t .. ok
-t/0a-03.t .. ok
-t/0a-04.t .. ok
-t/0b-01.t .. ok
-t/0b-02.t .. ok
-t/0b-03.t .. ok
-
-#   Failed test at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 20.
-#          got: 'Eggs cooked over easy
-# too few positional arguments: 1 passed, 2 (or more) expected
-# current instr.: 'breakfast' pc 34 (example-0b-04.pir:16)
-# called from Sub 'main' pc 28 (example-0b-04.pir:15)
-# '
-#     expected: 'Eggs cooked over easy
-# too few positional arguments: 1 passed, 2 (or more) expected
-# current instr.: 'breakfast' pc 34 (example-0b-04.pir:19)
-# called from Sub 'main' pc 26 (example-0b-04.pir:15)
-# '
-# Looks like you failed 1 test of 1.
-t/0b-04.t .. 
-Dubious, test returned 1 (wstat 256, 0x100)
-Failed 1/1 subtests 
-t/0b-05.t .. ok
-t/0b-06.t .. ok
-t/0b-07.t .. ok
-t/0b-08.t .. ok
-
-#   Failed test at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 27.
-#                   't/01-extract-details.t ...                              t/01-extract-details.t ... Dubious, test returned 1
-# No subtests run 
-# t/02-summarize-star.t ....                              t/02-summarize-star.t .... Dubious, test returned 1
-# No subtests run 
-# t/03-extract-from-csv.t ..                              t/03-extract-from-csv.t .. Dubious, test returned 1
-# No subtests run 
-# t/04-check-star.t ........                              t/04-check-star.t ........ Dubious, test returned 1
-# No subtests run 
-# t/05-search-catalog.t ....                              t/05-search-catalog.t .... Dubious, test returned 1
-# No subtests run 
-# 
-# Test Summary Report
-# -------------------
-# t/01-extract-details.t  (Tests: 0 Failed: 0)
-#   Non-zero exit status: 1
-#   Parse errors: Unknown TAP token: "error:imcc:syntax error, unexpected VAR, expecting '(' ('filename')"
-#                 Unknown TAP token: "	in file 'lib/stellar.pir' line 177"
-#                 Unknown TAP token: "	included from 't/01-extract-details.t' line 1"
-#                 Unknown TAP token: "error:imcc:syntax error, unexpected VAR, expecting '(' ('catalog')"
-#                 Unknown TAP token: "	in file 'lib/stellar.pir' line 178"
-#                 Unknown TAP token: "	included from 't/01-extract-details.t' line 1"
-#                 Unknown TAP token: "error:imcc:syntax error, unexpected VAR, expecting '(' ('catalog')"
-#                 Unknown TAP token: "	in file 'lib/stellar.pir' line 182"
-#                 Unknown TAP token: "	included from 't/01-extract-details.t' line 1"
-#                 Unknown TAP token: "error:imcc:syntax error, unexpected VAR, expecting '(' ('catalog')"
-#                 Unknown TAP token: "	in file 'lib/stellar.pir' line 194"
-#                 Unknown TAP token: "	included from 't/01-extract-details.t' line 1"
-#                 Unknown TAP token: "error:imcc:syntax error ... somewhere"
-#                 Unknown TAP token: "	in file 't/01-extract-details.t' line 23"
-#                 No plan found in TAP output
-# t/02-summarize-star.t   (Tests: 0 Failed: 0)
-#   Non-zero exit status: 1
-#   Parse errors: Unknown TAP token: "error:imcc:syntax error, unexpected VAR, expecting '(' ('filename')"
-#                 Unknown TAP token: "	in file 'lib/stellar.pir' line 177"
-#                 Unknown TAP token: "	included from 't/02-summarize-star.t' line 1"
-#                 Unknown TAP token: "error:imcc:syntax error, unexpected VAR, expecting '(' ('catalog')"
-#                 Unknown TAP token: "	in file 'lib/stellar.pir' line 178"
-#                 Unknown TAP token: "	included from 't/02-summarize-star.t' line 1"
-#                 Unknown TAP token: "error:imcc:syntax error, unexpected VAR, expecting '(' ('catalog')"
-#                 Unknown TAP token: "	in file 'lib/stellar.pir' line 182"
-#                 Unknown TAP token: "	included from 't/02-summarize-star.t' line 1"
-#                 Unknown TAP token: "error:imcc:syntax error, unexpected VAR, expecting '(' ('catalog')"
-#                 Unknown TAP token: "	in file 'lib/stellar.pir' line 194"
-#                 Unknown TAP token: "	included from 't/02-summarize-star.t' line 1"
-#                 Unknown TAP token: "error:imcc:syntax error ... somewhere"
-#                 Unknown TAP token: "	in file 't/02-summarize-star.t' line 39"
-#                 No plan found in TAP output
-# t/03-extract-from-csv.t (Tests: 0 Failed: 0)
-#   Non-zero exit status: 1
-#   Parse errors: Unknown TAP token: "error:imcc:syntax error, unexpected VAR, expecting '(' ('filename')"
-#                 Unknown TAP token: "	in file 'lib/stellar.pir' line 177"
-#                 Unknown TAP token: "	included from 't/03-extract-from-csv.t' line 1"
-#                 Unknown TAP token: "error:imcc:syntax error, unexpected VAR, expecting '(' ('catalog')"
-#                 Unknown TAP token: "	in file 'lib/stellar.pir' line 178"
-#                 Unknown TAP token: "	included from 't/03-extract-from-csv.t' line 1"
-#                 Unknown TAP token: "error:imcc:syntax error, unexpected VAR, expecting '(' ('catalog')"
-#                 Unknown TAP token: "	in file 'lib/stellar.pir' line 182"
-#                 Unknown TAP token: "	included from 't/03-extract-from-csv.t' line 1"
-#                 Unknown TAP token: "error:imcc:syntax error, unexpected VAR, expecting '(' ('catalog')"
-#                 Unknown TAP token: "	in file 'lib/stellar.pir' line 194"
-#                 Unknown TAP token: "	included from 't/03-extract-from-csv.t' line 1"
-#                 Unknown TAP token: "error:imcc:syntax error ... somewhere"
-#                 Unknown TAP token: "	in file 't/03-extract-from-csv.t' line 44"
-#                 No plan found in TAP output
-# t/04-check-star.t       (Tests: 0 Failed: 0)
-#   Non-zero exit status: 1
-#   Parse errors: Unknown TAP token: "error:imcc:syntax error, unexpected VAR, expecting '(' ('filename')"
-#                 Unknown TAP token: "	in file 'lib/stellar.pir' line 177"
-#                 Unknown TAP token: "	included from 't/04-check-star.t' line 1"
-#                 Unknown TAP token: "error:imcc:syntax error, unexpected VAR, expecting '(' ('catalog')"
-#                 Unknown TAP token: "	in file 'lib/stellar.pir' line 178"
-#                 Unknown TAP token: "	included from 't/04-check-star.t' line 1"
-#                 Unknown TAP token: "error:imcc:syntax error, unexpected VAR, expecting '(' ('catalog')"
-#                 Unknown TAP token: "	in file 'lib/stellar.pir' line 182"
-#                 Unknown TAP token: "	included from 't/04-check-star.t' line 1"
-#                 Unknown TAP token: "error:imcc:syntax error, unexpected VAR, expecting '(' ('catalog')"
-#                 Unknown TAP token: "	in file 'lib/stellar.pir' line 194"
-#                 Unknown TAP token: "	included from 't/04-check-star.t' line 1"
-#                 Unknown TAP token: "error:imcc:syntax error ... somewhere"
-#                 Unknown TAP token: "	in file 't/04-check-star.t' line 34"
-#                 No plan found in TAP output
-# t/05-search-catalog.t   (Tests: 0 Failed: 0)
-#   Non-zero exit status: 1
-#   Parse errors: Unknown TAP token: "error:imcc:syntax error, unexpected VAR, expecting '(' ('filename')"
-#                 Unknown TAP token: "	in file 'lib/stellar.pir' line 177"
-#                 Unknown TAP token: "	included from 't/05-search-catalog.t' line 1"
-#                 Unknown TAP token: "error:imcc:syntax error, unexpected VAR, expecting '(' ('catalog')"
-#                 Unknown TAP token: "	in file 'lib/stellar.pir' line 178"
-#                 Unknown TAP token: "	included from 't/05-search-catalog.t' line 1"
-#                 Unknown TAP token: "error:imcc:syntax error, unexpected VAR, expecting '(' ('catalog')"
-#                 Unknown TAP token: "	in file 'lib/stellar.pir' line 182"
-#                 Unknown TAP token: "	included from 't/05-search-catalog.t' line 1"
-#                 Unknown TAP token: "error:imcc:syntax error, unexpected VAR, expecting '(' ('catalog')"
-#                 Unknown TAP token: "	in file 'lib/stellar.pir' line 194"
-#                 Unknown TAP token: "	included from 't/05-search-catalog.t' line 1"
-#                 Unknown TAP token: "error:imcc:syntax error ... somewhere"
-#                 Unknown TAP token: "	in file 't/05-search-catalog.t' line 26"
-#                 No plan found in TAP output
-# Files=5, Tests=0,  0.058 wallclock secs
-# Result: FAIL
-# test fails
-# current instr.: 'setup' pc 829 (runtime/parrot/library/distutils.pir:379)
-# called from Sub 'main' pc 31 (setup.pir:17)
-# '
-#     doesn't match '(?-xism:Result: PASS)'
-# Looks like you failed 1 test of 1.
-t/0c-01.t .. 
-Dubious, test returned 1 (wstat 256, 0x100)
-Failed 1/1 subtests 
-
-#   Failed test at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 20.
-#          got: 'error:imcc:syntax error, unexpected VAR, expecting '(' ('filename')
-# 	in file 'lib/stellar.pir' line 199
-# error:imcc:syntax error, unexpected VAR, expecting '(' ('catalog')
-# 	in file 'lib/stellar.pir' line 200
-# error:imcc:syntax error, unexpected VAR, expecting '(' ('catalog')
-# 	in file 'lib/stellar.pir' line 204
-# error:imcc:syntax error, unexpected VAR, expecting '(' ('catalog')
-# 	in file 'lib/stellar.pir' line 216
-# error:imcc:syntax error ... somewhere
-# 	in file 'lib/stellar.pir' line 217
-# '
-#     expected: '<Name: Sol, Spectrum: G2V, Distance: 0.000004848>
-# <Name: HD 7186, Spectrum: G2V, Distance: 112.359550561798>
-# <Name: HD 140235, Spectrum: G2V, Distance: 60.1684717208183>
-# <Name: HD 169019, Spectrum: G2V, Distance: 108.108108108108>
-# 4 matches.
-# '
-# Looks like you failed 1 test of 1.
-t/0c-02.t .. 
-Dubious, test returned 1 (wstat 256, 0x100)
-Failed 1/1 subtests 
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/02-01.t line 2.
+BEGIN failed--compilation aborted at t/02-01.t line 2.
+t/02-01.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/02-02.t line 2.
+BEGIN failed--compilation aborted at t/02-02.t line 2.
+t/02-02.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/02-03.t line 2.
+BEGIN failed--compilation aborted at t/02-03.t line 2.
+t/02-03.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/02-04.t line 2.
+BEGIN failed--compilation aborted at t/02-04.t line 2.
+t/02-04.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/02-05.t line 2.
+BEGIN failed--compilation aborted at t/02-05.t line 2.
+t/02-05.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/02-06.t line 2.
+BEGIN failed--compilation aborted at t/02-06.t line 2.
+t/02-06.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/02-07.t line 2.
+BEGIN failed--compilation aborted at t/02-07.t line 2.
+t/02-07.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/02-08.t line 2.
+BEGIN failed--compilation aborted at t/02-08.t line 2.
+t/02-08.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/02-09.t line 2.
+BEGIN failed--compilation aborted at t/02-09.t line 2.
+t/02-09.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/02-10.t line 2.
+BEGIN failed--compilation aborted at t/02-10.t line 2.
+t/02-10.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/02-11.t line 2.
+BEGIN failed--compilation aborted at t/02-11.t line 2.
+t/02-11.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/02-12.t line 2.
+BEGIN failed--compilation aborted at t/02-12.t line 2.
+t/02-12.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/03-01.t line 2.
+BEGIN failed--compilation aborted at t/03-01.t line 2.
+t/03-01.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/03-02.t line 2.
+BEGIN failed--compilation aborted at t/03-02.t line 2.
+t/03-02.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/03-03.t line 2.
+BEGIN failed--compilation aborted at t/03-03.t line 2.
+t/03-03.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/03-04.t line 2.
+BEGIN failed--compilation aborted at t/03-04.t line 2.
+t/03-04.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/03-05.t line 2.
+BEGIN failed--compilation aborted at t/03-05.t line 2.
+t/03-05.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/03-06.t line 2.
+BEGIN failed--compilation aborted at t/03-06.t line 2.
+t/03-06.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/03-07.t line 2.
+BEGIN failed--compilation aborted at t/03-07.t line 2.
+t/03-07.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/03-08.t line 2.
+BEGIN failed--compilation aborted at t/03-08.t line 2.
+t/03-08.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/03-09.t line 2.
+BEGIN failed--compilation aborted at t/03-09.t line 2.
+t/03-09.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/03-10.t line 2.
+BEGIN failed--compilation aborted at t/03-10.t line 2.
+t/03-10.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/04-01.t line 2.
+BEGIN failed--compilation aborted at t/04-01.t line 2.
+t/04-01.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/04-02.t line 2.
+BEGIN failed--compilation aborted at t/04-02.t line 2.
+t/04-02.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/04-03.t line 2.
+BEGIN failed--compilation aborted at t/04-03.t line 2.
+t/04-03.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/04-04.t line 2.
+BEGIN failed--compilation aborted at t/04-04.t line 2.
+t/04-04.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/05-01.t line 2.
+BEGIN failed--compilation aborted at t/05-01.t line 2.
+t/05-01.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/05-02.t line 2.
+BEGIN failed--compilation aborted at t/05-02.t line 2.
+t/05-02.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/05-03.t line 2.
+BEGIN failed--compilation aborted at t/05-03.t line 2.
+t/05-03.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/05-04.t line 2.
+BEGIN failed--compilation aborted at t/05-04.t line 2.
+t/05-04.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/05-05.t line 2.
+BEGIN failed--compilation aborted at t/05-05.t line 2.
+t/05-05.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/05-06.t line 2.
+BEGIN failed--compilation aborted at t/05-06.t line 2.
+t/05-06.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/05-07.t line 2.
+BEGIN failed--compilation aborted at t/05-07.t line 2.
+t/05-07.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/06-01.t line 2.
+BEGIN failed--compilation aborted at t/06-01.t line 2.
+t/06-01.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/06-02.t line 2.
+BEGIN failed--compilation aborted at t/06-02.t line 2.
+t/06-02.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/06-03.t line 2.
+BEGIN failed--compilation aborted at t/06-03.t line 2.
+t/06-03.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/06-04.t line 2.
+BEGIN failed--compilation aborted at t/06-04.t line 2.
+t/06-04.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/06-05.t line 2.
+BEGIN failed--compilation aborted at t/06-05.t line 2.
+t/06-05.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/06-06.t line 2.
+BEGIN failed--compilation aborted at t/06-06.t line 2.
+t/06-06.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/06-07.t line 2.
+BEGIN failed--compilation aborted at t/06-07.t line 2.
+t/06-07.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/07-01.t line 2.
+BEGIN failed--compilation aborted at t/07-01.t line 2.
+t/07-01.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/07-02.t line 2.
+BEGIN failed--compilation aborted at t/07-02.t line 2.
+t/07-02.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/07-03.t line 2.
+BEGIN failed--compilation aborted at t/07-03.t line 2.
+t/07-03.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/08-01.t line 2.
+BEGIN failed--compilation aborted at t/08-01.t line 2.
+t/08-01.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/08-02.t line 2.
+BEGIN failed--compilation aborted at t/08-02.t line 2.
+t/08-02.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/08-03.t line 2.
+BEGIN failed--compilation aborted at t/08-03.t line 2.
+t/08-03.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/08-04.t line 2.
+BEGIN failed--compilation aborted at t/08-04.t line 2.
+t/08-04.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/08-05.t line 2.
+BEGIN failed--compilation aborted at t/08-05.t line 2.
+t/08-05.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/08-06.t line 2.
+BEGIN failed--compilation aborted at t/08-06.t line 2.
+t/08-06.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/08-07.t line 2.
+BEGIN failed--compilation aborted at t/08-07.t line 2.
+t/08-07.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/08-08.t line 2.
+BEGIN failed--compilation aborted at t/08-08.t line 2.
+t/08-08.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/08-09.t line 2.
+BEGIN failed--compilation aborted at t/08-09.t line 2.
+t/08-09.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/08-10.t line 2.
+BEGIN failed--compilation aborted at t/08-10.t line 2.
+t/08-10.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/08-11.t line 2.
+BEGIN failed--compilation aborted at t/08-11.t line 2.
+t/08-11.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/08-12.t line 2.
+BEGIN failed--compilation aborted at t/08-12.t line 2.
+t/08-12.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/09-01.t line 2.
+BEGIN failed--compilation aborted at t/09-01.t line 2.
+t/09-01.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/09-02.t line 2.
+BEGIN failed--compilation aborted at t/09-02.t line 2.
+t/09-02.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/09-03.t line 2.
+BEGIN failed--compilation aborted at t/09-03.t line 2.
+t/09-03.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/0a-01.t line 2.
+BEGIN failed--compilation aborted at t/0a-01.t line 2.
+t/0a-01.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/0a-02.t line 2.
+BEGIN failed--compilation aborted at t/0a-02.t line 2.
+t/0a-02.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/0a-03.t line 2.
+BEGIN failed--compilation aborted at t/0a-03.t line 2.
+t/0a-03.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/0a-04.t line 2.
+BEGIN failed--compilation aborted at t/0a-04.t line 2.
+t/0a-04.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/0b-01.t line 2.
+BEGIN failed--compilation aborted at t/0b-01.t line 2.
+t/0b-01.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/0b-02.t line 2.
+BEGIN failed--compilation aborted at t/0b-02.t line 2.
+t/0b-02.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/0b-03.t line 2.
+BEGIN failed--compilation aborted at t/0b-03.t line 2.
+t/0b-03.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/0b-04.t line 2.
+BEGIN failed--compilation aborted at t/0b-04.t line 2.
+t/0b-04.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/0b-05.t line 2.
+BEGIN failed--compilation aborted at t/0b-05.t line 2.
+t/0b-05.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/0b-06.t line 2.
+BEGIN failed--compilation aborted at t/0b-06.t line 2.
+t/0b-06.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/0b-07.t line 2.
+BEGIN failed--compilation aborted at t/0b-07.t line 2.
+t/0b-07.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/0b-08.t line 2.
+BEGIN failed--compilation aborted at t/0b-08.t line 2.
+t/0b-08.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/0c-01.t line 2.
+BEGIN failed--compilation aborted at t/0c-01.t line 2.
+t/0c-01.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/0c-02.t line 2.
+BEGIN failed--compilation aborted at t/0c-02.t line 2.
+t/0c-02.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/0d-01.t line 2.
+BEGIN failed--compilation aborted at t/0d-01.t line 2.
+t/0d-01.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/0d-02.t line 2.
+BEGIN failed--compilation aborted at t/0d-02.t line 2.
+t/0d-02.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/0d-03.t line 2.
+BEGIN failed--compilation aborted at t/0d-03.t line 2.
+t/0d-03.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/0d-04.t line 2.
+BEGIN failed--compilation aborted at t/0d-04.t line 2.
+t/0d-04.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/0d-05.t line 2.
+BEGIN failed--compilation aborted at t/0d-05.t line 2.
+t/0d-05.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/0d-05a.t line 2.
+BEGIN failed--compilation aborted at t/0d-05a.t line 2.
+t/0d-05a.t .. 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/0d-05b.t line 2.
+BEGIN failed--compilation aborted at t/0d-05b.t line 2.
+t/0d-05b.t .. 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/0e-01.t line 2.
+BEGIN failed--compilation aborted at t/0e-01.t line 2.
+t/0e-01.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/0e-02.t line 2.
+BEGIN failed--compilation aborted at t/0e-02.t line 2.
+t/0e-02.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/0e-03.t line 2.
+BEGIN failed--compilation aborted at t/0e-03.t line 2.
+t/0e-03.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
+Can't locate IPC/Run.pm in @INC (@INC contains: /Users/brian/Projects/site-builder/parrot-babysteps/lib /usr/local/lib/perl5/site_perl/5.12.2/darwin-2level /usr/local/lib/perl5/site_perl/5.12.2 /usr/local/lib/perl5/5.12.2/darwin-2level /usr/local/lib/perl5/5.12.2 .) at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+BEGIN failed--compilation aborted at /Users/brian/Projects/site-builder/parrot-babysteps/lib/Test/CLI.pm line 4.
+Compilation failed in require at t/0e-04.t line 2.
+BEGIN failed--compilation aborted at t/0e-04.t line 2.
+t/0e-04.t ... 
+Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run 
 
 Test Summary Report
 -------------------
-t/02-04.t (Wstat: 256 Tests: 1 Failed: 1)
-  Failed test:  1
-  Non-zero exit status: 1
-t/02-06.t (Wstat: 256 Tests: 1 Failed: 1)
-  Failed test:  1
-  Non-zero exit status: 1
-t/02-09.t (Wstat: 256 Tests: 1 Failed: 1)
-  Failed test:  1
-  Non-zero exit status: 1
-t/04-04.t (Wstat: 256 Tests: 1 Failed: 1)
-  Failed test:  1
-  Non-zero exit status: 1
-t/06-01.t (Wstat: 256 Tests: 1 Failed: 1)
-  Failed test:  1
-  Non-zero exit status: 1
-t/06-02.t (Wstat: 256 Tests: 1 Failed: 1)
-  Failed test:  1
-  Non-zero exit status: 1
-t/06-03.t (Wstat: 256 Tests: 1 Failed: 1)
-  Failed test:  1
-  Non-zero exit status: 1
-t/06-04.t (Wstat: 256 Tests: 1 Failed: 1)
-  Failed test:  1
-  Non-zero exit status: 1
-t/06-05.t (Wstat: 256 Tests: 1 Failed: 1)
-  Failed test:  1
-  Non-zero exit status: 1
-t/06-06.t (Wstat: 256 Tests: 1 Failed: 1)
-  Failed test:  1
-  Non-zero exit status: 1
-t/06-07.t (Wstat: 256 Tests: 1 Failed: 1)
-  Failed test:  1
-  Non-zero exit status: 1
-t/07-01.t (Wstat: 256 Tests: 1 Failed: 1)
-  Failed test:  1
-  Non-zero exit status: 1
-t/07-02.t (Wstat: 256 Tests: 1 Failed: 1)
-  Failed test:  1
-  Non-zero exit status: 1
-t/07-03.t (Wstat: 256 Tests: 1 Failed: 1)
-  Failed test:  1
-  Non-zero exit status: 1
-t/08-06.t (Wstat: 512 Tests: 2 Failed: 2)
-  Failed tests:  1-2
+t/01-06.t (Wstat: 512 Tests: 0 Failed: 0)
   Non-zero exit status: 2
-t/0b-04.t (Wstat: 256 Tests: 1 Failed: 1)
-  Failed test:  1
-  Non-zero exit status: 1
-t/0c-01.t (Wstat: 256 Tests: 1 Failed: 1)
-  Failed test:  1
-  Non-zero exit status: 1
-t/0c-02.t (Wstat: 256 Tests: 1 Failed: 1)
-  Failed test:  1
-  Non-zero exit status: 1
-Files=78, Tests=88,  7 wallclock secs ( 0.21 usr  0.21 sys +  5.29 cusr  1.46 csys =  7.17 CPU)
+  Parse errors: No plan found in TAP output
+t/02-01.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/02-02.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/02-03.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/02-04.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/02-05.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/02-06.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/02-07.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/02-08.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/02-09.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/02-10.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/02-11.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/02-12.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/03-01.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/03-02.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/03-03.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/03-04.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/03-05.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/03-06.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/03-07.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/03-08.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/03-09.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/03-10.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/04-01.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/04-02.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/04-03.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/04-04.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/05-01.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/05-02.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/05-03.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/05-04.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/05-05.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/05-06.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/05-07.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/06-01.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/06-02.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/06-03.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/06-04.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/06-05.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/06-06.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/06-07.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/07-01.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/07-02.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/07-03.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/08-01.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/08-02.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/08-03.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/08-04.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/08-05.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/08-06.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/08-07.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/08-08.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/08-09.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/08-10.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/08-11.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/08-12.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/09-01.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/09-02.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/09-03.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/0a-01.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/0a-02.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/0a-03.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/0a-04.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/0b-01.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/0b-02.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/0b-03.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/0b-04.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/0b-05.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/0b-06.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/0b-07.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/0b-08.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/0c-01.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/0c-02.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/0d-01.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/0d-02.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/0d-03.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/0d-04.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/0d-05.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/0d-05a.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/0d-05b.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/0e-01.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/0e-02.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/0e-03.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+t/0e-04.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+Files=89, Tests=5,  1 wallclock secs ( 0.19 usr  0.23 sys +  0.50 cusr  0.24 csys =  1.16 CPU)
 Result: FAIL
 make: *** [test] Error 1

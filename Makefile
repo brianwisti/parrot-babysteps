@@ -1,2 +1,2 @@
 test:
-	prove -Ilib
+	prove -Ilib 
