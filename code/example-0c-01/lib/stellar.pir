@@ -3,9 +3,6 @@
 
 .loadlib 'io_ops'
 
-.sub 'main' :main
-.end
-
 .sub extract_from_csv_line
     .param string star_string
     .param pmc    header_fields     :optional

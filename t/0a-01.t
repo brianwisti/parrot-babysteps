@@ -1,6 +1,6 @@
 use Modern::Perl;
 use Test::CLI qw(run_output_like);
-use Test::More tests => 1;
+use Test::More;
 
 my (@command, $in, $expected);
 
@@ -12,3 +12,5 @@ chdir 'code/example-0a-01';
 
 $expected = qr{Could not find sub extract_star_details};
 run_output_like $expected, \@command, $in;
+
+done_testing();
