@@ -1,9 +1,8 @@
 # Parrot Babysteps Sample Code
 
-[Parrot Babysteps tutorial]: http://coolnamehere.com/geekery/parrot/learn/
+[Parrot Babysteps tutorial]: http://randomgeekery.org/pages/geekery/parrot/learn/
 [Astronomy Nexus]: http://astronexus.com
 [Parrot]: http://parrot.org
-[My page]: http://coolnamehere.com/brian
 
 This is the sample code for my [Parrot Babysteps tutorial][]. I'm putting
 it into a repository so that it will be easier for you to follow along,
@@ -32,18 +31,20 @@ or
 
     $ make test
 
-[Modern::Perl]: http://search.cpan.org/~chromatic/Modern-Perl-1.03/
-[IPC::Run]: http://search.cpan.org/~toddr/IPC-Run-0.89/
+[Modern::Perl]: https://metacpan.org/module/Modern::Perl
+[IPC::Run]: https://metacpan.org/module/IPC::Run
 
-Note that I use [Modern::Perl] and [IPC::Run][] in my code, so that's a dependency for the tests.
+Note that I use [Modern::Perl][] and [IPC::Run][] in my code, so that's a dependency for the tests.
 
     $ sudo cpan Modern::Perl
     $ sudo cpan IPC::Run
 
 ## I have questions!
 
+[My page]: http://randomgeekery.org/pages/brian/
+
 Don't we all? You can find details about contacting me at [my page][].
 
 Brian Wisti
 
-<http://coolnamehere.com>
+<http://randomgeekery.org>
